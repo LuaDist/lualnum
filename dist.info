@@ -1,0 +1,17 @@
+--- This file is part of LuaDist project
+
+name = "lualnum"
+version = "5.1.4.20090417"
+
+desc = "Lua with LNUM patch.  The LNUM patch allows easy and wide configuration of Lua number types, with the use of simple compiler defines. It provides added integer accuracy (32- or 64-bit), enhances speed on non-FPU systems and allows use of complex numbers (C99 required)."
+author = "Roberto Ierusalimschy, Waldemar Celes, Luiz Henrique de Figueiredo, Asko Kauppi (LNUM)"
+license = "MIT/X11"
+url = "http://luaforge.net/projects/lnum/"
+--url = "http://www.lua.org"
+maintainer = "Peter Drahoš"
+
+provides = { "lua-5.1.4" }
+
+-- Included patch lua514-lnum-20090417-custom.patch differs from
+-- http://luaforge.net/frs/download.php/4037/lua514-lnum-20090417.patch.tgz
+-- by a one-line bug-fix.
